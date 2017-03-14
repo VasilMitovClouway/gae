@@ -31,6 +31,7 @@ buildscript {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'org.jmock:jmock-junit4:2.8.1'
     compile 'javax.servlet:javax.servlet-api:3.1.0'
 
     //app engine dependencies
@@ -44,4 +45,8 @@ dependencies {
 
     //sitebricks dependency
     compile 'com.google.sitebricks:sitebricks:0.8.11'
+
+    //local cuse lib
+    compile files('lib/cuse-0.1.jar')
+
 }
